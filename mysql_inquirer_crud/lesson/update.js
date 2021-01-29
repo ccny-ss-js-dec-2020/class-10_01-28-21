@@ -32,6 +32,11 @@ inquirer.prompt([
       console.log("Update Successful");
       console.log(data.message)
       console.log(data.message.includes("Changed: 1"));
+      if(data.message.includes("Changed: 1")){
+        console.log("Update Successful");
+      } else {
+        console.log("No Record Updated");
+      }
     })
   } catch (e) {
     console.log("ERROR!");
