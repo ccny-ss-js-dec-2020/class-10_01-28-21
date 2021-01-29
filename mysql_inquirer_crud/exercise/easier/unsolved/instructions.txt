@@ -1,0 +1,6 @@
+* In MySQL Developer, create a table called "sesame_street_characters" with the fields:
+  - name
+  - species
+  - (Whatever Other Fields You Want)
+* Using Node, Inquirer & MySQL, and only one javascript file, write an app that
+  will perform all of the crud operations for the "sesame_street_characters" table

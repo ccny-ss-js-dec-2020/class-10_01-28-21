@@ -1,0 +1,4 @@
+Inquirer MySQL Dynamic Choices Exercise
+goal: using inquirer and mysql, prompt the user with a list of movie title choices.
+      you will get these movie title choices from the database.
+      Once they choose a movie, display(console.log) information about the movie
