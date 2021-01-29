@@ -30,14 +30,19 @@ inquirer.prompt([
      Then you catch that error in the catch(e){} section, with the error being in the "e" param
      The finally section is usually used to close out a process, which we are doing with the database connection here
     */
+    // test the error by inputting a varchar for the age
     try {
       if(err){
         throw new Error(err)
       }
+      console.log("Insert Successful")
     } catch (e){
+      // if there's an error thrown, this is where it will end up
       console.log("ERROR!")
       console.log(e)
     } finally {
+      // whether there's an error or not, do this
+      // usually you just end a connection here
       databaseConnection.end();
     }
   })

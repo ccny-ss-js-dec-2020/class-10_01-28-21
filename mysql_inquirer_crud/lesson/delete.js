@@ -43,6 +43,7 @@ databaseConnection.query(selectQuery, function(err, data){
           if(deleteErr){
             throw new Error(deleteErr);
           }
+          console.log(deleteData)
           console.log("Deletion Successful");
         });
       } catch (e) {

@@ -30,7 +30,8 @@ inquirer.prompt([
         throw new Error(err)
       }
       console.log("Update Successful");
-      console.log(data);
+      console.log(data.message)
+      console.log(data.message.includes("Changed: 1"));
     })
   } catch (e) {
     console.log("ERROR!");

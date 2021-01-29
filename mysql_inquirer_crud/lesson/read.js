@@ -16,9 +16,6 @@ inquirer.prompt([
   }
 ]).then(function(answers){
   if(answers.student_choice === "Get All Students"){
-    /*
-      The reason for the single quotes around the double quotes is because sql expects quotes around a string/varchar
-    */
     try {
       databaseConnection.query(selectQuery, function(err, data){
         if(err){
